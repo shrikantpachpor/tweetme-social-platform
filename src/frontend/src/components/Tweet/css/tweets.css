@@ -1,0 +1,453 @@
+#root .tweets-body {
+  min-width: 300px;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+}
+
+#root .tweets-body .individual-tweet {
+  border-top: 1px solid #e6ecf0;
+}
+
+#root .tweets-body .individual-tweet .confirmation-popup {
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: hidden;
+  z-index: 998;
+  user-select: none;
+}
+
+#root .tweets-body .individual-tweet .confirmation-message {
+  cursor: default;
+  user-select: none;
+  position: fixed;
+  border: 2px solid #e6ecf0;
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+  text-align: center;
+  background-color: white;
+  opacity: 1;
+  z-index: 999;
+  width: 90%;
+  padding: 25px 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 240px) {
+  #root .tweets-body .individual-tweet .confirmation-message {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 241px) {
+  #root .tweets-body .individual-tweet .confirmation-message {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 350px) {
+  #root .tweets-body .individual-tweet .confirmation-message {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 400px) {
+  #root .tweets-body .individual-tweet .confirmation-message {
+    width: 84%;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 500px) {
+  #root .tweets-body .individual-tweet .confirmation-message {
+    width: 500px;
+    font-size: 17px;
+  }
+}
+
+#root .tweets-body .individual-tweet .confirmation-message .confirm-button {
+  padding: 3px 10px;
+  border-radius: 99999px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (max-width: 240px) {
+  #root .tweets-body .individual-tweet .confirmation-message .confirm-button {
+    width: 40%;
+    margin: 8px auto;
+    display: block;
+  }
+}
+
+@media (min-width: 241px) {
+  #root .tweets-body .individual-tweet .confirmation-message .confirm-button {
+    width: 40%;
+    margin: 8px auto;
+    display: block;
+  }
+}
+
+@media (min-width: 500px) {
+  #root .tweets-body .individual-tweet .confirmation-message .confirm-button {
+    width: 70px;
+    display: inline-block;
+    margin: 10px;
+  }
+}
+
+#root .tweets-body .individual-tweet .confirmation-message .cancel {
+  background-color: #e6ecf0;
+  color: black;
+  font-weight: bold;
+}
+
+#root .tweets-body .individual-tweet .confirmation-message .confirm {
+  background-color: #ca2055;
+  color: white;
+  font-weight: bold;
+}
+
+#root .tweets-body .individual-tweet:last-child {
+  border-bottom: 1px solid #e6ecf0;
+}
+
+#root .tweets-body .individual-tweet .tweet-owner {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#root .tweets-body .individual-tweet .tweet-owner-name:hover {
+  text-decoration: underline;
+}
+
+#root .tweets-body .individual-tweet .tweet-submenu-container {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+  top: 17px;
+}
+
+@media (max-width: 240px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 5%;
+  }
+}
+
+@media (min-width: 241px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 5%;
+  }
+}
+
+@media (min-width: 270px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 8%;
+  }
+}
+
+@media (min-width: 300px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 15%;
+  }
+}
+
+@media (min-width: 340px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 22%;
+  }
+}
+
+@media (min-width: 380px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 32%;
+  }
+}
+
+@media (min-width: 420px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 38%;
+  }
+}
+
+@media (min-width: 460px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 42%;
+  }
+}
+
+@media (min-width: 500px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 51%;
+  }
+}
+
+@media (min-width: 550px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 54%;
+  }
+}
+
+@media (min-width: 600px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 57%;
+  }
+}
+
+@media (min-width: 650px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 59%;
+  }
+}
+
+@media (min-width: 700px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-container {
+    left: 65%;
+  }
+}
+
+#root .tweets-body .individual-tweet .tweet-submenu-container .tweet-submenu-popup {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  color: #657786;
+  cursor: pointer;
+  user-select: none;
+  z-index: 990;
+  vertical-align: bottom;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: bottom;
+  width: 12px;
+  margin: 5px auto;
+  line-height: 12px;
+  color: #657786;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+#root .tweets-body .individual-tweet .tweet-submenu-container .tweet-submenu-popup:hover {
+  border-radius: 50%;
+  padding: 3px;
+  color: #1da1f2;
+  background-color: #e8f5fe;
+}
+
+#root .tweets-body .individual-tweet .tweet-submenu-container .tweet-delete-button {
+  display: block;
+  text-align: center;
+  border: 2px solid #bbbbbb;
+  paddig: 2px 4px;
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  border-radius: 1px;
+  font-weight: bold;
+  padding: 0 2px;
+  font-size: 14px;
+  color: #999999;
+  background-color: white;
+  position: relative;
+  z-index: 997;
+  /*  @include screen-size(240) {
+          left: 5%;
+        }
+        @include screen-size(241) {
+          left: 8%;
+        }
+        @include screen-size(270) {
+          left: 18%;
+        }
+        @include screen-size(300) {
+          left: 26%;
+        }
+        @include screen-size(340) {
+          left: 35%;
+        }
+        @include screen-size(380) {
+          left: 42%;
+        }
+        @include screen-size(420) {
+          left: 49%;
+        }
+        @include screen-size(460) {
+          left: 54%;
+        }
+        @include screen-size(500) {
+          left: 58%;
+        }
+        @include screen-size(550) {
+          left: 60%;
+        }
+        @include screen-size(600) {
+          left: 62%;
+        }
+        @include screen-size(650) {
+          left: 64%;
+        }
+        @include screen-size(700) {
+          left: 67%;
+        }*/
+}
+
+#root .tweets-body .individual-tweet .tweet-submenu-container .tweet-delete-button:hover {
+  color: white;
+  background-color: #ca2055;
+  border: 2px solid #ca2055;
+}
+
+#root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+  position: relative;
+}
+
+@media (max-width: 240px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -20px;
+    left: 55%;
+  }
+}
+
+@media (min-width: 241px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -20px;
+    left: 55%;
+  }
+}
+
+@media (min-width: 300px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -23px;
+    left: 62%;
+  }
+}
+
+@media (min-width: 350px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 65%;
+  }
+}
+
+@media (min-width: 400px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 69%;
+  }
+}
+
+@media (min-width: 450px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 73%;
+  }
+}
+
+@media (min-width: 500px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 75%;
+  }
+}
+
+@media (min-width: 550px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 76%;
+  }
+}
+
+@media (min-width: 600px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 77%;
+  }
+}
+
+@media (min-width: 650px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 81.5%;
+  }
+}
+
+@media (min-width: 700px) {
+  #root .tweets-body .individual-tweet .tweet-submenu-singlepage-container {
+    top: -21px;
+    left: 83%;
+  }
+}
+
+@media (max-width: 240px) {
+  #root .tweets-body .individual-tweet span.chat-icons {
+    padding-right: 2%;
+  }
+}
+
+@media (max-width: 240px) {
+  #root .tweets-body .individual-tweet span.chat-icons {
+    padding-right: 2%;
+  }
+}
+
+@media (min-width: 241px) {
+  #root .tweets-body .individual-tweet span.chat-icons {
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 500px) {
+  #root .tweets-body .individual-tweet span.chat-icons {
+    padding-right: 20%;
+  }
+}
+
+#root .tweets-body .individual-tweet span.chat-icons .chat-icon {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #657786;
+  cursor: pointer;
+}
+
+#root .tweets-body .individual-tweet span.chat-icons .chat-icon:hover {
+  font-weight: bold;
+  color: #1da1f2;
+  outline: none;
+  background-color: #e8f5fe;
+}
+
+#root .tweets-body .individual-tweet span.chat-icons .clicked {
+  color: #1da1f2;
+}
+
+#root .tweets-body .individual-tweet span.chat-icons .chat-counts {
+  padding-left: 5px;
+  height: 16px;
+  width: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: top;
+  user-select: none;
+  color: #657786;
+  cursor: pointer;
+}
+
+#root .tweets-body .individual-tweet span.chat-icons .chat-counts:hover {
+  color: #1da1f2;
+}

@@ -1,0 +1,3 @@
+@function random_element($elements...) {
+  @return nth($elements, random(length($elements)))
+}

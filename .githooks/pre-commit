@@ -1,0 +1,26 @@
+# PRE-COMMIT SECURITY CHECK
+# This script performs final security validation before any git commit
+# Run: git config core.hooksPath .githooks
+
+#!/bin/bash
+echo "🔒 Running pre-commit security check..."
+
+# Check for dangerous files
+DANGEROUS_EXTENSIONS="\.env \.key \.pem \.p12 \.sqlite3 \.csv"
+for ext in $DANGEROUS_EXTENSIONS; do
+    if git diff --cached --name-only | grep -E "$ext"; then
+        echo "❌ BLOCKED: Attempt to commit dangerous file type: $ext"
+        echo "These files should be in .gitignore"
+        exit 1
+    fi
+done
+
+# Check for secret patterns in staged content
+if git diff --cached | grep -E "(SECRET_KEY|password|api_key)\s*=\s*['\"][^'\"]{10,}['\"]"; then
+    echo "❌ BLOCKED: Potential secret detected in staged content"
+    echo "Use environment variables instead"
+    exit 1
+fi
+
+echo "✅ Security check passed"
+exit 0

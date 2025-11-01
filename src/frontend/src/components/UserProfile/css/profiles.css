@@ -1,0 +1,239 @@
+body {
+  height: 100%;
+}
+
+body div.profile-body {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid #e6ecf0;
+  border-bottom: none;
+  height: 100%;
+  /*  border: 2px solid yellow;
+          font-size: 60px;
+            line-height: 25px;
+          height: 30px;
+          margin: auto;
+          vertical-align: middle;
+          padding: 0;*/
+}
+
+body div.profile-body div.profile-bg-image {
+  background-color: #1da1f2;
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 700px;
+  margin: auto;
+}
+
+body div.profile-body [data-letters]:before {
+  content: attr(data-letters);
+  display: inline-block;
+  font-size: 60px;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.3em;
+  text-align: center;
+  border-radius: 50%;
+  background: #FF7F50;
+  vertical-align: middle;
+  margin-right: 1em;
+  color: white;
+  border: 7px solid white;
+  margin-top: -0.9em;
+  margin-left: 2%;
+}
+
+body div.profile-body .follow-button {
+  user-select: none;
+  display: inline-block;
+  border: 1px solid #1da1f2;
+  border-radius: 9999px;
+  padding: 5px 15px;
+  position: relative;
+}
+
+body div.profile-body .follow-button:hover {
+  cursor: pointer;
+  background-color: #e8f5fe;
+  outline: none;
+}
+
+@media (max-width: 240px) {
+  body div.profile-body .follow-button {
+    left: 40%;
+  }
+}
+
+@media (min-width: 300px) {
+  body div.profile-body .follow-button {
+    left: 15%;
+  }
+}
+
+@media (min-width: 350px) {
+  body div.profile-body .follow-button {
+    left: 25%;
+  }
+}
+
+@media (min-width: 380px) {
+  body div.profile-body .follow-button {
+    left: 30%;
+  }
+}
+
+@media (min-width: 470px) {
+  body div.profile-body .follow-button {
+    left: 42%;
+  }
+}
+
+@media (min-width: 550px) {
+  body div.profile-body .follow-button {
+    left: 50%;
+  }
+}
+
+@media (min-width: 550px) {
+  body div.profile-body .follow-button {
+    left: 50%;
+  }
+}
+
+@media (min-width: 570px) {
+  body div.profile-body .follow-button {
+    left: 52%;
+  }
+}
+
+@media (min-width: 700px) {
+  body div.profile-body .follow-button {
+    left: 60%;
+  }
+}
+
+body div.profile-body .follow-button .twitter-button-text {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 17px;
+  font-stretch: 100%;
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+  line-height: 19px;
+  height: auto;
+  color: #1da1f2;
+}
+
+body div.profile-body .following-button {
+  user-select: none;
+  display: inline-block;
+  border: 1px solid #1da1f2;
+  border-radius: 9999px;
+  padding: 5px 15px;
+  position: relative;
+  background-color: #1da1f2;
+  color: white;
+  text-align: justify;
+}
+
+body div.profile-body .following-button:hover {
+  cursor: pointer;
+  border: 1px solid #ca2055;
+  background-color: #ca2055;
+  outline: none;
+}
+
+@media (max-width: 240px) {
+  body div.profile-body .following-button {
+    display: block;
+    left: 2%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 300px) {
+  body div.profile-body .following-button {
+    left: 0.5%;
+  }
+}
+
+@media (min-width: 350px) {
+  body div.profile-body .following-button {
+    left: 15%;
+  }
+}
+
+@media (min-width: 380px) {
+  body div.profile-body .following-button {
+    left: 24%;
+  }
+}
+
+@media (min-width: 470px) {
+  body div.profile-body .following-button {
+    left: 37%;
+  }
+}
+
+@media (min-width: 550px) {
+  body div.profile-body .following-button {
+    left: 43%;
+  }
+}
+
+@media (min-width: 570px) {
+  body div.profile-body .following-button {
+    left: 45%;
+  }
+}
+
+@media (min-width: 700px) {
+  body div.profile-body .following-button {
+    left: 54%;
+  }
+}
+
+body div.profile-body .following-button .twitter-button-text {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 17px;
+  font-stretch: 100%;
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+  line-height: 19px;
+  height: auto;
+  color: #1da1f2;
+}
+
+body div.profile-body .following-button .style-following {
+  color: white;
+}
+
+body div.profile-body .following {
+  background-color: #1da1f2;
+}
+
+body div.profile-body .user-profile-fullname {
+  padding: 0;
+  margin: 0;
+  font-size: 19px;
+  line-height: 19px;
+  height: 21px;
+  font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+}
+
+body div.profile-body .user-status {
+  padding: 8px 0;
+}
+
+body div.profile-body div.user-connections {
+  padding-bottom: 20px;
+}
+
+body div.profile-body div.user-connections .user-following {
+  padding-right: 20px;
+}
+
+body div.profile-body div.user-connections .user-followers {
+  padding-left: 20px;
+}

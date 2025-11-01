@@ -1,0 +1,15 @@
+@import "../../static/scss/scss_variables.scss";
+@import "../../static/scss/_mixins.scss";
+
+#root {
+  .body {
+    @include border_box();
+    max-width: 700px;
+    min-width: 300px;
+    width: 100%;
+    margin: auto;
+    //  background-color: blue;
+    border-left: 1px solid $standard-border-color;
+    border-right: 1px solid $standard-border-color;
+  }
+}

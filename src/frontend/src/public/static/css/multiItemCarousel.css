@@ -1,0 +1,154 @@
+.nearby-spot,
+.spots-scroll-button,
+.spots-scroll-button-container {
+  display: inline-block;
+}
+
+.spots-scroll-button-container {
+  position: relative;
+  top: 35%;
+}
+
+.spots-scroll-button {
+  vertical-align: middle;
+  position: relative;
+  top: -53%;
+}
+
+.nearby-spot {
+  width: 22.5%;
+  height: 150px;
+  margin: 0.5% 1%;
+}
+
+.nearby-spots {
+  text-align: center;
+  white-space: nowrap;
+  height: 150px;
+}
+
+.nearby-spots #multicarousel {
+  width: 70%;
+  display: inline-block;
+  overflow-x: scroll;
+}
+
+#prev-spot,#next-spot {
+  border-radius: 50%;
+  background-color: #111111;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  /*padding: 5px 2px 0;*/
+  cursor: pointer;
+
+}
+
+@media (max-width: 240px) {
+  #prev-spot,#next-spot {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
+@media (max-width: 240px) {
+  #prev-spot,#next-spot {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: 1400px) {
+  #prev-spot,#next-spot {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+  }
+ .mutlicarousel-button {
+    font-size: 25px;
+    vertical-align: middle;
+    user-select: none;
+    position:relative;
+    top: 22%;
+  }
+}
+
+#prev-spot:hover,#next-spot:hover {
+  background-color: #009999;
+  color: white;
+}
+
+/*.spots-scroll-button {
+  border-radius: 50%;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  background-color: #111111;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #e1e1e1;*/
+/*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+/*-ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  padding: 5px 2px 0 2px;*/
+/*color: #009999;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #009999;
+    color: white;
+  }
+  @include screen-size(200) {
+    width: 20px;
+    height: 20px;
+  }
+  @include screen-size(1400) {
+    width: 50px;
+    height: 50px;
+    padding: {
+      top: 12px;
+      bottom: 13px;
+    };
+
+    i {
+      font-size: 25px;
+    }
+  }
+}
+
+#prev-spot {
+  position: relative;
+  @include screen-size(1400) {
+    top: 115px;
+    left: 370px;
+  }
+}
+
+#next-spot {
+  position: relative;
+  @include screen-size(1400) {
+    top: -120px;
+    left: 1500px;
+  }
+}
+
+#multicarousel {
+  height: 180px;
+  width: 55%;
+  margin: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-align: center;
+
+  .card {
+    width: 150px;
+    height: 150px;
+    margin: 0.5% 1%;
+    display: inline-block;
+  }
+}*/

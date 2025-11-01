@@ -1,0 +1,240 @@
+@import "./_mixins/_mixins.scss";
+
+body {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  @include screen-size(200) {
+    /*  padding-top: 45px;*/
+  }
+  @include screen-size(241) {
+    /*  padding-top: 45px;*/
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+#component {
+  @include screen-size(200) {
+    padding-top: 45px;
+  }
+  @include screen-size(241) {
+    padding-top: 45px;
+  }
+}
+
+.content {
+  width: 70%;
+  margin: auto;
+}
+
+.breakcrumbs {
+  margin: {
+    top: 20%;
+  }
+}
+
+.main-body:not(.material-icons) {
+  background-color: #fafafa; //#f2f2f2
+  font-family: "times new roman";
+  @include screen-size(200) {
+    font-size: 14px;
+  }
+  @include screen-size(241) {
+    font-size: 16px;
+  }
+  @include screen-size(500) {
+    font-size: 16px;
+  }
+  @include screen-size(1000) {
+    font-size: 16px;
+  }
+  @include screen-size(2500) {
+    font-size: 17px;
+  }
+}
+
+main {
+  /*  @include screen-size(200) {
+    margin: 10px 0;
+  }
+  @include screen-size(241) {
+    margin: 20px 0;
+  }
+  @include screen-size(500) {
+    margin: 20px 0;
+  }
+  @include screen-size(700) {
+    margin: 30px 0;
+  }*/
+}
+
+.head6 {
+  color: #009999;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  @include screen-size(200) {
+    font-size: 14px;
+  }
+  @include screen-size(241) {
+    font-size: 16px;
+  }
+  @include screen-size(500) {
+    font-size: 16px;
+  }
+  @include screen-size(1000) {
+    font-size: 16px;
+  }
+  @include screen-size(2500) {
+    font-size: 17px;
+  }
+}
+
+.head5 {
+  color: #009999;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  @include screen-size(200) {
+    font-size: 14px;
+  }
+  @include screen-size(241) {
+    font-size: 16px;
+  }
+  @include screen-size(500) {
+    font-size: 16px;
+  }
+  @include screen-size(1000) {
+    font-size: 16px;
+  }
+  @include screen-size(2500) {
+    font-size: 17px;
+  }
+}
+
+.head4 {
+  color: #009999;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  @include screen-size(200) {
+    font-size: 15px;
+  }
+  @include screen-size(241) {
+    font-size: 17px;
+  }
+  @include screen-size(500) {
+    font-size: 17px;
+  }
+  @include screen-size(1000) {
+    font-size: 17px;
+  }
+  @include screen-size(2500) {
+    font-size: 18px;
+  }
+}
+
+.head3 {
+  color: #009999;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+  @include screen-size(200) {
+    font-size: 16px;
+  }
+  @include screen-size(241) {
+    font-size: 18px;
+  }
+  @include screen-size(500) {
+    font-size: 18px;
+  }
+  @include screen-size(1000) {
+    font-size: 18px;
+  }
+  @include screen-size(2500) {
+    font-size: 19px;
+  }
+}
+
+.head2 {
+  color: #009999;
+  /*another optional color: #0096AD*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 800;
+  @include screen-size(200) {
+    font-size: 17px;
+    padding: 1% 0;
+  }
+  @include screen-size(241) {
+    font-size: 19px;
+  }
+  @include screen-size(500) {
+    font-size: 19px;
+  }
+  @include screen-size(1000) {
+    font-size: 19px;
+  }
+  @include screen-size(2500) {
+    font-size: 20px;
+  }
+}
+
+.head1 {
+  color: #009999;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: 900;
+  @include screen-size(200) {
+    font-size: 22px;
+    margin: 2.5% auto;
+    width: 100%;
+    padding: 1%;
+  }
+  @include screen-size(241) {
+    font-size: 28px;
+    margin: 2.5% auto;
+    width: 100%;
+    padding: 1%;
+  }
+  @include screen-size(500) {
+    font-size: 28px;
+    margin: 2.5% auto 1.2%;
+    width: 100%;
+    padding: 1%;
+  }
+  @include screen-size(700) {
+    font-size: 28px;
+    margin: 2% auto 1%;
+    width: 100%;
+    padding: 1%;
+  }
+  @include screen-size(1000) {
+    font-size: 30px;
+    margin: 2.3% auto 0.3%;
+    width: 100%;
+    padding: 0.3%;
+  }
+  @include screen-size(1900) {
+    font-size: 32px;
+  }
+}
+/*#content {
+  width: 63%;
+  margin: auto;
+  //border: 1px solid red;
+}*/

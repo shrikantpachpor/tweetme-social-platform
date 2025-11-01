@@ -1,0 +1,409 @@
+.content {
+  width: 70%;
+  margin: auto;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#sheru-carousel {
+  position: relative;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  /*
+  Introduced in IE 10.
+  See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+*/
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.round-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  opacity: 0.5;
+  background-color: #111111;
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  /*padding: 5px 2px 0 2px;*/
+  color: #009999;
+  cursor: context-menu;
+  font-weight: 900;
+}
+
+.next-image {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 999;
+}
+
+.prev-image {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 999;
+}
+
+.main-carousel {
+  display: block;
+  background-color: black;
+  margin: auto;
+}
+
+.carousel-image {
+  display: block;
+  position: relative;
+  margin: auto;
+  z-index: 50;
+}
+
+.acive-image {
+  display: block;
+  position: absolute;
+  z-index: 75;
+  margin: auto;
+  align-self: center;
+  /*width:100%;*/
+}
+
+.carousel-controls {
+  background-color: #111111;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #222222;
+  z-index: 9999;
+}
+
+.carousel-button {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  /*padding: 5px 2px 0 2px;*/
+  color: #009999;
+  border-right: 2px solid #222222;
+  cursor: context-menu;
+}
+
+#image-button,
+#thumbnails-button {
+  position: relative;
+}
+
+#autoplay-button {}
+
+#image-name {
+  width: auto;
+}
+
+#image-description {
+  width: auto;
+}
+
+#slide-number {}
+
+#slant,
+#slide-number-current,
+#slide-number-total {
+  border-left: none;
+  border-right: none;
+}
+
+#previous-button {
+  border-right: none;
+  position: relative;
+}
+
+#next-button {
+  border-left: none;
+  position: relative;
+}
+
+#slide-number-current {
+  vertical-align: middle;
+  position: relative;
+}
+
+#slant {
+  font-style: bold;
+  font-size: 120%;
+  vertical-align: middle;
+  color: #009999;
+  cursor: context-menu;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+#slide-number-total {
+  vertical-align: middle;
+  position: relative;
+}
+
+#slide-number-current,
+#slide-number-total {
+  font-size: 110%;
+  vertical-align: middle;
+}
+
+#popup-button {}
+
+#blank-button {
+  width: 45%;
+  border-right: none;
+}
+
+#fullscreen-button,
+#fullscreen-exit {
+  border-right: 2px solid #222222;
+  border-left: 2px solid #222222;
+  position: absolute;
+  right: 20px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.active-image {
+  object-fit: contain;
+  -ms-object-position: center;
+}
+
+#autoplay-button:hover,
+#fullscreen-button:hover,
+#fullscreen-exit:hover,
+#image-button:hover,
+#next-button:hover,
+#previous-button:hover,
+#thumbnails-button:hover,
+.round-button:hover {
+  background-color: #009999;
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.slide1 {}
+
+.material-icons {
+  /*font-size: 145%;*/
+}
+
+.hide {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+/*************** for carousel thumbnails*************************/
+/*************** for carousel thumbnails*************************/
+.carousel-thumbnails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  background-color: white;
+  opacity: 0.90;
+  filter: alpha(opacity=90);
+  /* For IE8 and earlier */
+  overflow: auto;
+}
+
+.thumbnails-container {
+  z-index: 150;
+  margin: auto;
+  justify-content: center;
+}
+
+.thumbnail-box {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  float: left;
+  z-index: 200;
+}
+
+.thumbnail-card {
+  margin: auto;
+  /*border: 1px solid #ddd;
+ border-radius: 4px;  */
+}
+
+.thumbnail-image {
+  opacity: 1;
+  object-fit: fill;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.img-thumbnail:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 4px 2px #bbbbbb;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.img-thumbnail:active {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #777777;
+  transform: translateY(3px);
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.noclick {
+  pointer-events: none;
+}
+/*classes for carousel outer frame and buttons:*/
+
+.carousel-app-holder {
+  height: auto;
+  width: auto;
+  display: inline-block;
+  margin: 100px 0 0 450px;
+  padding: 0;
+
+  .carousel-main-buttons {
+    height: 38px;
+    width: 800px;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+
+    .empty-button1 {
+      height: 38px;
+      width: 80px;
+      border-bottom: 2px solid #009999;
+    }
+
+    .carousel-image-button {
+      height: 38px;
+      width: 125px;
+      border-top: 1px solid #bbbbbb;
+      border-left: 1px solid #bbbbbb;
+      border-bottom: 2px solid #009999;
+      display: table;
+      text-align: center;
+    }
+
+    .carousel-video-button {
+      height: 38px;
+      width: 125px;
+      margin: 0;
+      border-right: 1px solid #bbbbbb;
+      border-top: 1px solid #bbbbbb;
+      border-bottom: 2px solid #009999;
+      display: table;
+      text-align: center;
+    }
+
+    .main-button-active {
+      height: 38px;
+      width: 125px;
+      text-align: center;
+      border-top: 2px solid #009999;
+      border-left: 2px solid #009999;
+      border-right: 2px solid #009999;
+      border-bottom: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: #009999;
+    }
+
+    .main-button-inactive {
+      background-color: #eeeeee;
+    }
+
+    .main-button-inactive:hover {
+      background-color: #009999;
+      color: white;
+      cursor: pointer;
+    }
+
+    .main-button-text {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .empty-button2 {
+      display: flex;
+      flex-grow: 100;
+      border-bottom: 2px solid #009999;
+      width: auto;
+      height: 38px;
+    }
+  }
+
+  .carousel-cover {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    border-right: 2px solid #009999;
+    border-bottom: 2px solid #009999;
+    border-left: 2px solid #009999;
+    width: 800px;
+    height: 400px;
+
+    .carousel-frame {
+      display: inline-block;
+      border: 1px solid red;
+      background-color: black;
+      width: 778px;
+      /*696px*/
+      /*746px*/
+      height: 378px;
+      /*346px*/
+      /*296px*/
+      margin: 10px;
+      /*25px 50px*/
+      /*50px*/
+      text-align: center;
+    }
+  }
+}

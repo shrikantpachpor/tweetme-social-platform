@@ -1,0 +1,11 @@
+@mixin screen-size($screenSize) {
+  @if ($screenSize<=240) {
+    @media (max-width: 240px) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $screenSize+"px") {
+      @content;
+    }
+  }
+}
